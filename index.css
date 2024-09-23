@@ -1,0 +1,156 @@
+
+        body {
+            background: linear-gradient(to bottom, #1a1a1a, #333333); /* Πιο σκούρο γκρι gradient */
+            color: #f5f5dc; /* Ελαφρύ πορτοκαλί για το κείμενο */
+            font-family: 'Lora', serif;
+            margin: 0;
+            padding: 0;
+        }
+.intro-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #b2e1b2; /* Ανοιχτό φυστικί χρώμα */
+    z-index: 9999; /* Βεβαιώσου ότι είναι πάνω από όλα τα άλλα */
+    animation: fadeOut 4s forwards; /* Χρονική διάρκεια 3 δευτερόλεπτα */
+    animation-delay: 1s; /* Καθυστέρηση πριν το fade out */
+    display: flex; /* Κέντρο το κείμενο */
+    justify-content: center; /* Κεντρική ευθυγράμμιση οριζόντια */
+    align-items: center; /* Κεντρική ευθυγράμμιση κάθετα */
+}
+
+.intro-background h1 {
+    color: #333; /* Χρώμα κειμένου */
+    font-size: 2.5em; /* Μέγεθος γραμματοσειράς */
+    text-shadow: 1px 3px 2px rgba(0, 0, 0, 0.3); /* Σκιά κειμένου */
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        pointer-events: none; /* Αποφυγή αλληλεπίδρασης μετά το fade out */
+    }
+}
+
+
+
+
+
+        /* Navbar styling */
+        .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #f09b1d; 
+    color: #333;
+    padding: 15px 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: flex-start; /* Ευθυγράμμιση αριστερά */
+    align-items: center;
+    gap: 20px; /* Απόσταση μεταξύ των στοιχείων */
+    overflow-x: auto; /* Επιτρέπει την κύλιση */
+    white-space: nowrap; /* Αποτρέπει την τυλίξη των στοιχείων */
+}
+
+.navbar a {
+    color: #333;
+    text-decoration: none;
+    padding: 8px 15px;
+    font-size: 1.1em;
+}
+
+.navbar a:hover {
+    background-color: #ffffff;
+    color: #4caf50;
+    transition: 0.3s ease;
+}
+
+/* Responsive Navbar */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: row; /* Σε σειρά */
+    }
+    .navbar a {
+        padding: 10px 0;
+        font-size: 1.2em;
+    }
+}
+
+
+        /* Header Section */
+        header {
+            margin-top: 80px;
+            text-align: center;
+        }
+
+        .title-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .title-container img {
+            height: 60px; /* Προσθήκη εικόνας δίπλα από το h1 */
+        }
+
+        h1 {
+            font-size: 2.8em;
+            color: #f5f5dc;
+            margin: 20px 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Subtitles */
+        h2 {
+            font-size: 2em;
+            margin-top: 40px;
+            color: #ff9800; /* Έντονο πορτοκαλί */
+            text-align: center;
+            font-weight: 700;
+        }
+
+        h3 {
+            font-size: 1.8em;
+            margin-top: 30px;
+            color: #ffcc80;
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        /* List Styling */
+        ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        li {
+            margin: 25px 0;
+            font-size: 1.2em;
+            color: #f5f5dc;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin: 100px auto;
+            max-width: 800px;
+            padding: 0 20px;
+        }
+
+        /* Ingredients Styling */
+        .ingredients {
+            font-size: 0.85em;
+            color: #ffcc80;
+            background: transparent;
+            padding: 5px;
+            font-family: 'Lora', serif;
+        }
+    </style>
+</head>

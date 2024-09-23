@@ -1,0 +1,9 @@
+document.addEventListener("DOMContentLoaded", function() {
+    const intro = document.getElementById('intro');
+    setTimeout(() => {
+        intro.style.opacity = 0;
+        setTimeout(() => {
+            intro.style.display = 'none'; // Αφαίρεσε το από το DOM
+        }, 1000); // Ιδανικά να ταιριάζει με το χρόνο του transition
+    }, 2000); // Χρόνος που θέλεις να παραμείνει το λογότυπο
+});
